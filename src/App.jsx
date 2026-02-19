@@ -1,5 +1,6 @@
 import { Hello } from "./components/Hello";
 import { Teste } from "./components/Teste";
+import { Teste2 } from "./components/Teste2";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
 
       <Hello />
       <Teste />
+      <Teste2 />
     </div>
   );
 }
