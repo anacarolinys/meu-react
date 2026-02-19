@@ -1,4 +1,5 @@
 import { Hello } from "./components/Hello";
+import { Teste } from "./components/Teste";
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
       <p>Se eu mudar este arquivo, muda no navegador.</p>
 
       <Hello />
+      <Teste />
     </div>
   );
 }
