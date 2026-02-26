@@ -1,9 +1,10 @@
-export  function Button({ label, onClick}){
+export  function Button({ label, onClick, width}){
     return(
         <button
             type="button"
             onClick={onClick}
             style={{
+                width: width ?? "fit-content",
                 padding:"10px 14px",
                 borderRadius: 8,
                 border:"1px solid #ddd",

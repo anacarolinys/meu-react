@@ -2,37 +2,27 @@ export function Card({ title, description, onDetails }) {
   return (
     <div
       style={{
-        border: "1px solid #fff",
+        border: "1px solid #ddd",
         borderRadius: 12,
         padding: 16,
-        background: "#4b5563",
-        display: "grid",
-        gap: 10,
+        background: "#635d5d",
       }}
     >
-      <div style={{ display: "grid", gap: 6 }}>
-        <h3 style={{ margin: 0, fontSize: 18 }}>{title}</h3>
-        <p style={{ margin: 0, color: "#f8f9fa", lineHeight: 1.4 }}>
-          {description}
-        </p>
-      </div>
+      <h2 style={{ margin: 0 }}>{title}</h2>
+      <p style={{ marginTop: 8 }}>{description}</p>
 
-      {onDetails ? (
-        <button
-          type="button"
-          onClick={onDetails}
-          style={{
-            justifySelf: "start",
-            padding: "8px 12px",
-            borderRadius: 10,
-            border: "1px solid #e5e7eb",
-            background: "#4b5563",
-            cursor: "pointer",
-          }}
-        >
-          Saiba mais
-        </button>
-      ) : null}
+      <button
+        onClick={onDetails}
+        style={{
+          marginTop: 10,
+          padding: "10px 14px",
+          borderRadius: 10,
+          border: "none",
+          cursor: "pointer",
+        }}
+      >
+        Ver detalhes
+      </button>
     </div>
   );
 }
