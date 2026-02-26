@@ -24,7 +24,7 @@ const cards = [
       }}
     >
       <div style={{ width: "100%", maxWidth: 800 }}>
-         <h1>Dia 2 — JSX + Props ✅</h1>
+         <h1>Dia 3 ✅</h1>
 
       <Header title="Meu painel" subtitle="Dia 2 — JSX + Props"/>
 
